@@ -1,0 +1,164 @@
+{
+  "routes": [
+    {
+      "route": "/api/v1/user",
+      "method": "POST",
+      "controller": "../components/user/controller/UserController",
+      "secured": false,
+      "adminRoute":true,
+      "action":"createUser"
+    },
+    {
+      "route": "/api/v1/user",
+      "method": "DELETE",
+      "controller": "../components/user/controller/UserController",
+      "secured": true,
+      "adminRoute":true,
+      "action":"deleteUser"
+    },
+    {
+      "route": "/api/v1/user/:id",
+      "method": "PUT",
+      "controller": "../components/user/controller/UserController",
+      "secured": true,
+      "adminRoute":true,
+      "action":"updateUser"
+    },
+    {
+      "route": "/api/v1/user",
+      "method": "GET",
+      "controller": "../components/user/controller/UserController",
+      "secured": true,
+      "adminRoute":true,
+      "action":"getAllUser"
+    },
+    {
+      "route": "/api/v1/user/users",
+      "method": "GET",
+      "controller": "../components/user/controller/UserController",
+      "secured": true,
+      "adminRoute":true,
+      "action":"getUser"
+    }, {
+      "route": "/api/v1/login",
+      "method": "POST",
+      "controller": "../components/user/controller/UserController",
+      "secured": false,
+      "adminRoute":true,
+      "action":"login"
+    },
+    {
+      "route": "/api/v1/logout",
+      "method": "POST",
+      "controller": "../components/user/controller/UserController",
+      "secured": false,
+      "adminRoute":true,
+      "action":"logout"
+    },
+    {
+      "route": "/api/v1/user/contact",
+      "method": "POST",
+      "controller": "../components/user/controller/UserController",
+      "secured": true,
+      "adminRoute":false,
+      "action":"createContact"
+    },
+    {
+      "route": "/api/v1/user/contact",
+      "method": "DELETE",
+      "controller": "../components/user/controller/UserController",
+      "secured": true,
+      "adminRoute":false,
+      "action":"deleteContact"
+    },
+    {
+      "route": "/api/v1/user/contact/:id",
+      "method": "PUT",
+      "controller": "../components/user/controller/UserController",
+      "secured": true,
+      "adminRoute":false,
+      "action":"updateContact"
+    },
+    {
+      "route": "/api/v1/user/contact",
+      "method": "GET",
+      "controller": "../components/user/controller/UserController",
+      "secured": true,
+      "adminRoute":false,
+      "action":"getAllContact"
+    },
+    {
+      "route": "/api/v1/user/contact/contact",
+      "method": "GET",
+      "controller": "../components/user/controller/UserController",
+      "secured": true,
+      "adminRoute":false,
+      "action":"getContact"
+    },
+    {
+      "route": "/api/v1/user/contact/contactDetails",
+      "method": "POST",
+      "controller": "../components/user/controller/UserController",
+      "secured": true,
+      "adminRoute":false,
+      "action":"createContactDetails"
+    },
+    {
+      "route": "/api/v1/user/contact/contactDetails",
+      "method": "DELETE",
+      "controller": "../components/user/controller/UserController",
+      "secured": true,
+      "adminRoute":false,
+      "action":"deleteContactDetails"
+    },
+    {
+      "route": "/api/v1/user/contact/contactDetails/:contactDetailsId",
+      "method": "PUT",
+      "controller": "../components/user/controller/UserController",
+      "secured": true,
+      "adminRoute":false,
+      "action":"updateContactDetails"
+    },
+    {
+      "route": "/api/v1/user/contact/contactDetails/:contactId",
+      "method": "GET",
+      "controller": "../components/user/controller/UserController",
+      "secured": true,
+      "adminRoute":false,
+      "action":"getAllContactDetails"
+    },
+    {
+      "route": "/api/v1/user/contact/contactDetails/contactDetails",
+      "method": "GET",
+      "controller": "../components/user/controller/UserController",
+      "secured": true,
+      "adminRoute":false,
+      "action":"getContactDetails"
+    },
+    {
+      "route": "/api/v1/lock",
+      "method": "POST",
+      "controller": "../components/user/controller/UserController",
+      "secured": false,
+      "adminRoute":false,
+      "action":"verifyUserByUsername"
+    },
+    {
+    "route": "/api/v1/reset/admin",
+      "method": "PUT",
+      "controller": "../components/user/controller/UserController",
+      "secured": true,
+      "adminRoute":true,
+      "action":"reset"
+    },
+    {
+      "route": "/api/v1/reset/user",
+      "method": "PUT",
+      "controller": "../components/user/controller/UserController",
+      "secured": false,
+      "adminRoute":false,
+      "action":"reset"
+    }
+  ]
+}
+
